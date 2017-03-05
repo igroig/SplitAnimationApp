@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.DecelerateInterpolator;
 
 public class MainActivity extends AppCompatActivity {
 
-    static int actionBarHeight;
+
+    static boolean back = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +22,6 @@ public class MainActivity extends AppCompatActivity {
         View view = findViewById(R.id.activity_main);
 
 
-//        TypedValue tv = new TypedValue();
-//        if (getTheme().resolveAttribute(android.R.attr.actionBarSize, tv, true))
-//        {
-//            actionBarHeight = TypedValue.complexToDimensionPixelSize(tv.data, getResources().getDisplayMetrics());
-//        }
 
 
 
@@ -40,20 +37,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
     }
 
-//    public void clickNext(View v){
-////        View root = this.getWindow().getDecorView().findViewById(android.R.id.content);
-////        root.setDrawingCacheEnabled(true);
-////        Bitmap bmp = root.getDrawingCache();
-////
-////        Bitmap mBmp1 = Bitmap.createBitmap(bmp, 0, 0, bmp.getWidth(), 300);
-////        Bitmap mBmp2 = Bitmap.createBitmap(bmp, 0, 300, bmp.getWidth(), bmp.getHeight() - 300);
-//
-//
-//    }
 
-//    public boolean onTouch(View view, MotionEvent event) {
-//
-//    }
+
+
+
 }
